@@ -1,0 +1,54 @@
+{
+    "type": "object",
+    "properties": {
+        "name": {
+            "required": false,
+            "type": "string"
+        },
+        "latitude": {
+            "type": "string"
+        },
+        "longitude": {
+            "type": "string"
+        },
+        "elevation": {
+            "required": false,
+            "type": "integer"
+        },
+        "sw": {
+            "required": false,
+            "type": "string"
+        },
+        "query": {
+            "required": false,
+            "type": "string"
+        },
+        "filter": {
+            "required": false,
+            "type": "string"
+        },
+        "date_range": {
+            "required": false,
+            "type": "string"
+        },
+        "facets": {
+            "type": "integer",
+            "enum": [
+                0,
+                1
+            ],
+            "default": 0
+        },
+        "sort": {
+            "type": "string"
+        },
+        "limit": {
+            "type": "integer",
+            "default": 20
+        },
+        "offset": {
+            "type": "integer",
+            "default": 0
+        }
+    }
+}
